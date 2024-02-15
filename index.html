@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>nstudios</title>
+  </head>
+  <body>
+    <!-- Global container -->
+    <div class="flex items-center justify-center min-h-screen bg-cyan-50">
+      <div class="bg-white p-6 m-3 space-y-10 shadow-2xl rounded-3xl md:p-40">
+        <!-- menu-container -->
+        <div
+          class="flex flex-col items-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 md:mb-24 justify-between"
+        >
+          <!-- menu items -->
+
+          <div
+            class="logo flex items-center text-slate-200 font-thin justify-start"
+          >
+            <p class="text-6xl">nstudios</p>
+          </div>
+
+          <div
+            class="navItems flex flex-col justify-center items-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 md:justify md:translate-y-3"
+          >
+            <div class="group">
+              <a href="#">Vector</a>
+              <div
+                class="mx-2 mt-2 border-b-2 opacity-0 border-black group-hover:opacity-100 duration-500"
+              ></div>
+            </div>
+
+            <div class="group">
+              <a href="#">Illusterations</a>
+              <div
+                class="mx-2 mt-2 border-b-2 opacity-0 border-black group-hover:opacity-100 duration-500"
+              ></div>
+            </div>
+
+            <div class="group">
+              <a href="#">Images</a>
+              <div
+                class="mx-2 mt-2 border-b-2 opacity-0 border-black group-hover:opacity-100 duration-500"
+              ></div>
+            </div>
+
+            <div class="group">
+              <a href="#">Icons</a>
+              <div
+                class="mx-2 mt-2 border-b-2 opacity-0 border-black group-hover:opacity-100 duration-500"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- search-container -->
+        <div
+          class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0"
+        >
+          <!-- search bar -->
+          <div class="flex justify-between border-b">
+            <input
+              type="text"
+              class="ml-6 border-none md:w-80 placeholder:font-thin focus:outline-none"
+              placeholder="Search"
+            />
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 text-gray-300 duration-200 hover:scale-110"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- upload button -->
+          <button
+            class="py-3 px-14 text-lg font-normal bg-black text-white border border-black shadow-2xl rounded-md hover:bg-white hover:text-black duration-500"
+          >
+            Upload
+          </button>
+        </div>
+
+        <!-- Gallery container-->
+        <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-4">
+          <!-- image 1 -->
+          <div class="relative group">
+            <img src="https://source.unsplash.com/random/300x200?sig=1" />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black bg-opacity-40 opacity-100 group-hover:opacity-100 md:opacity-0"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm nameOfPicture"></p>
+                  <p class="text-xs likes"></p>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-bookmark hover:fill-white flag"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.2"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image 2 -->
+          <div class="relative group">
+            <img src="https://source.unsplash.com/random/300x200?sig=2" />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black bg-opacity-40 opacity-100 group-hover:opacity-100 md:opacity-0"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm nameOfPicture"></p>
+                  <p class="text-xs likes"></p>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-bookmark hover:fill-white flag"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.2"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image 3 -->
+          <div class="relative group">
+            <img src="https://source.unsplash.com/random/300x200?sig=3" />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black bg-opacity-40 opacity-100 group-hover:opacity-100 md:opacity-0"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm nameOfPicture"></p>
+                  <p class="text-xs likes"></p>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-bookmark hover:fill-white flag"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.2"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image 4 -->
+          <div class="relative group">
+            <img src="https://source.unsplash.com/random/300x200?sig=4" />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black bg-opacity-40 opacity-100 group-hover:opacity-100 md:opacity-0"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm nameOfPicture"></p>
+                  <p class="text-xs likes"></p>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-bookmark hover:fill-white flag"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.2"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image 5 -->
+          <div class="relative group">
+            <img src="https://source.unsplash.com/random/300x200?sig=5" />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black bg-opacity-40 opacity-100 group-hover:opacity-100 md:opacity-0"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm nameOfPicture"></p>
+                  <p class="text-xs likes"></p>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-bookmark hover:fill-white flag"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.2"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image 6 -->
+          <div class="relative group">
+            <img src="https://source.unsplash.com/random/300x200?sig=6" />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black bg-opacity-40 opacity-100 group-hover:opacity-100 md:opacity-0"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm nameOfPicture"></p>
+                  <p class="text-xs likes"></p>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-bookmark hover:fill-white flag"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.2"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image 7 -->
+          <div class="relative group">
+            <img src="https://source.unsplash.com/random/300x200?sig=7" />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black bg-opacity-40 opacity-100 group-hover:opacity-100 md:opacity-0"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm nameOfPicture"></p>
+                  <p class="text-xs likes"></p>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-bookmark hover:fill-white flag"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.2"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image 8 -->
+          <div class="relative group">
+            <img src="https://source.unsplash.com/random/300x200?sig=8" />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black bg-opacity-40 opacity-100 group-hover:opacity-100 md:opacity-0"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm nameOfPicture"></p>
+                  <p class="text-xs likes"></p>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-bookmark hover:fill-white flag"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.2"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image 9 -->
+          <div class="relative group">
+            <img src="https://source.unsplash.com/random/300x200?sig=9" />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black bg-opacity-40 opacity-100 group-hover:opacity-100 md:opacity-0"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm nameOfPicture"></p>
+                  <p class="text-xs likes"></p>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-bookmark hover:fill-white flag"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.2"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image 10 -->
+          <div class="relative group">
+            <img src="https://source.unsplash.com/random/300x200?sig=10" />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black bg-opacity-40 opacity-100 group-hover:opacity-100 md:opacity-0"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm nameOfPicture"></p>
+                  <p class="text-xs likes"></p>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-bookmark hover:fill-white flag"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.2"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image 11 -->
+          <div class="relative group">
+            <img src="https://source.unsplash.com/random/300x200?sig=11" />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black bg-opacity-40 opacity-100 group-hover:opacity-100 md:opacity-0"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm nameOfPicture"></p>
+                  <p class="text-xs likes"></p>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-bookmark hover:fill-white flag"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.2"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image 12 -->
+          <div class="relative group">
+            <img src="https://source.unsplash.com/random/300x200?sig=12" />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black bg-opacity-40 opacity-100 group-hover:opacity-100 md:opacity-0"
+            >
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm nameOfPicture"></p>
+                  <p class="text-xs likes"></p>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-bookmark hover:fill-white flag"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.2"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
